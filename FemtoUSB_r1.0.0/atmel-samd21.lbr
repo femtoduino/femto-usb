@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -109,6 +109,59 @@
 <vertex x="-2.2" y="2.5"/>
 </polygon>
 </package>
+<package name="32-TQFP">
+<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="23"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.127" layer="23"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.127" layer="23"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="23"/>
+<wire x1="4.5" y1="3.5" x2="4.5" y2="-3.5" width="0.127" layer="23"/>
+<wire x1="-4.5" y1="3.5" x2="-4.5" y2="-3.5" width="0.127" layer="23"/>
+<wire x1="-3.5" y1="4.5" x2="3.5" y2="4.5" width="0.127" layer="23"/>
+<wire x1="-3.5" y1="-4.5" x2="3.5" y2="-4.5" width="0.127" layer="23"/>
+<smd name="4" x="-4" y="0.4" dx="0.7" dy="0.3" layer="1"/>
+<smd name="3" x="-4" y="1.2" dx="0.7" dy="0.3" layer="1"/>
+<smd name="2" x="-4" y="2" dx="0.7" dy="0.3" layer="1"/>
+<smd name="1" x="-4" y="2.8" dx="0.7" dy="0.3" layer="1"/>
+<smd name="5" x="-4" y="-0.4" dx="0.7" dy="0.3" layer="1"/>
+<smd name="6" x="-4" y="-1.2" dx="0.7" dy="0.3" layer="1"/>
+<smd name="7" x="-4" y="-2" dx="0.7" dy="0.3" layer="1"/>
+<smd name="8" x="-4" y="-2.8" dx="0.7" dy="0.3" layer="1"/>
+<wire x1="2.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-2.5" y2="-3.5" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-3.5" y="3.5"/>
+<vertex x="-3.5" y="2.5"/>
+<vertex x="-2.5" y="3.5"/>
+</polygon>
+<smd name="9" x="-2.8" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-2" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="-1.2" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="-0.4" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="0.4" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="1.2" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="2" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="16" x="2.8" y="-4" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="17" x="4" y="-2.8" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="18" x="4" y="-2" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="19" x="4" y="-1.2" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="20" x="4" y="-0.4" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="21" x="4" y="0.4" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="22" x="4" y="1.2" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="23" x="4" y="2" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="24" x="4" y="2.8" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="25" x="2.8" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="26" x="2" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="27" x="1.2" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="28" x="0.4" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="29" x="-0.4" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="30" x="-1.2" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="31" x="-2" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="32" x="-2.8" y="4" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SAMD21E">
@@ -158,6 +211,52 @@
 </gates>
 <devices>
 <device name="" package="QFN32">
+<connects>
+<connect gate="G$1" pin="GND@1" pad="10"/>
+<connect gate="G$1" pin="GND@2" pad="28"/>
+<connect gate="G$1" pin="PA00" pad="1"/>
+<connect gate="G$1" pin="PA01" pad="2"/>
+<connect gate="G$1" pin="PA02" pad="3"/>
+<connect gate="G$1" pin="PA03" pad="4"/>
+<connect gate="G$1" pin="PA04" pad="5"/>
+<connect gate="G$1" pin="PA05" pad="6"/>
+<connect gate="G$1" pin="PA06" pad="7"/>
+<connect gate="G$1" pin="PA07" pad="8"/>
+<connect gate="G$1" pin="PA08" pad="11"/>
+<connect gate="G$1" pin="PA09" pad="12"/>
+<connect gate="G$1" pin="PA10" pad="13"/>
+<connect gate="G$1" pin="PA11" pad="14"/>
+<connect gate="G$1" pin="PA14" pad="15"/>
+<connect gate="G$1" pin="PA15" pad="16"/>
+<connect gate="G$1" pin="PA16" pad="17"/>
+<connect gate="G$1" pin="PA17" pad="18"/>
+<connect gate="G$1" pin="PA18" pad="19"/>
+<connect gate="G$1" pin="PA19" pad="20"/>
+<connect gate="G$1" pin="PA22" pad="21"/>
+<connect gate="G$1" pin="PA23" pad="22"/>
+<connect gate="G$1" pin="PA24" pad="23"/>
+<connect gate="G$1" pin="PA25" pad="24"/>
+<connect gate="G$1" pin="PA27" pad="25"/>
+<connect gate="G$1" pin="PA28" pad="27"/>
+<connect gate="G$1" pin="PA30" pad="31"/>
+<connect gate="G$1" pin="PA31" pad="32"/>
+<connect gate="G$1" pin="RESETN" pad="26"/>
+<connect gate="G$1" pin="VDDANA" pad="9"/>
+<connect gate="G$1" pin="VDDCORE" pad="29"/>
+<connect gate="G$1" pin="VDDIN" pad="30"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATSAMD21E18A-AU">
+<gates>
+<gate name="G$1" symbol="SAMD21E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="32-TQFP">
 <connects>
 <connect gate="G$1" pin="GND@1" pad="10"/>
 <connect gate="G$1" pin="GND@2" pad="28"/>

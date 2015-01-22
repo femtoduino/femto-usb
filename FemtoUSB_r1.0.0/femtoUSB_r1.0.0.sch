@@ -1805,41 +1805,43 @@ chip</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ti-lm3480">
+<library name="MCP1700T-3302E_TT">
 <packages>
-<package name="LM3480">
-<wire x1="-1.5" y1="-0.7" x2="1.54" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="1.54" y1="0.7" x2="1.54" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="0.7" x2="1.54" y2="0.7" width="0.127" layer="21"/>
-<smd name="P$1" x="-0.93" y="-1.5" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="P$2" x="0.97" y="-1.5" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="P$3" x="0.02" y="1.5" dx="1" dy="0.5" layer="1" rot="R90"/>
+<package name="MCP1700T-3302E/TT">
+<wire x1="0" y1="0" x2="2.9" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="1.3" width="0.127" layer="21"/>
+<wire x1="0" y1="1.3" x2="2.9" y2="1.3" width="0.127" layer="21"/>
+<wire x1="2.9" y1="0" x2="2.9" y2="1.3" width="0.127" layer="21"/>
+<smd name="GND" x="0.5" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VOUT" x="2.4" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VIN" x="1.45" y="1.9" dx="1" dy="0.5" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
-<symbol name="LM3480">
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="5.08" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="1" x="20.32" y="2.54" length="middle" rot="R180"/>
+<symbol name="MCP1700T-3302E/TT">
+<pin name="1" x="-5.08" y="12.7" length="middle"/>
 <pin name="2" x="-5.08" y="2.54" length="middle"/>
-<pin name="3" x="7.62" y="-5.08" length="middle" rot="R90"/>
-<text x="2.54" y="7.62" size="1.27" layer="95">LM3480IM3-3.3</text>
+<pin name="3" x="17.78" y="7.62" length="middle" rot="R180"/>
+<wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<text x="5.08" y="12.7" size="1.778" layer="94" rot="R270">MCP1700</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM3480">
+<deviceset name="MCP1700T-3302E/TT">
+<description>Microchip LDO "MCP1700" in a 3-Pin SOT-23 package.
+ID: MCP1700T-3302E/TT</description>
 <gates>
-<gate name="G$1" symbol="LM3480" x="0" y="0"/>
+<gate name="G$1" symbol="MCP1700T-3302E/TT" x="-5.08" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="LM3480">
+<device name="" package="MCP1700T-3302E/TT">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="1" pad="GND"/>
+<connect gate="G$1" pin="2" pad="VOUT"/>
+<connect gate="G$1" pin="3" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1899,7 +1901,7 @@ chip</description>
 </part>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
-<part name="LDO_VREG" library="ti-lm3480" deviceset="LM3480" device=""/>
+<part name="LDO_VREG" library="MCP1700T-3302E_TT" deviceset="MCP1700T-3302E/TT" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="2.2uF"/>
 <part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
@@ -1967,17 +1969,17 @@ by Alex Albino</text>
 </instance>
 <instance part="U$26" gate="G$1" x="180.34" y="121.92" rot="R180"/>
 <instance part="U$27" gate="G$1" x="226.06" y="99.06"/>
-<instance part="LDO_VREG" gate="G$1" x="106.68" y="96.52" rot="R270"/>
+<instance part="LDO_VREG" gate="G$1" x="104.14" y="96.52" rot="R180"/>
 <instance part="U$3" gate="G$1" x="149.86" y="106.68" rot="R90"/>
 <instance part="C5" gate="G$1" x="121.92" y="96.52"/>
 <instance part="U$4" gate="G$1" x="121.92" y="116.84"/>
 <instance part="U$28" gate="G$1" x="109.22" y="71.12"/>
-<instance part="U$29" gate="G$1" x="81.28" y="88.9" rot="R90"/>
+<instance part="U$29" gate="G$1" x="71.12" y="88.9" rot="R90"/>
 <instance part="U$30" gate="G$1" x="121.92" y="71.12"/>
-<instance part="C6" gate="G$1" x="96.52" y="78.74"/>
-<instance part="C7" gate="G$1" x="86.36" y="78.74"/>
-<instance part="U$31" gate="G$1" x="96.52" y="71.12"/>
-<instance part="U$32" gate="G$1" x="86.36" y="71.12"/>
+<instance part="C6" gate="G$1" x="86.36" y="78.74"/>
+<instance part="C7" gate="G$1" x="76.2" y="78.74"/>
+<instance part="U$31" gate="G$1" x="86.36" y="71.12"/>
+<instance part="U$32" gate="G$1" x="76.2" y="71.12"/>
 <instance part="U$33" gate="G$1" x="198.12" y="43.18"/>
 <instance part="U$34" gate="G$1" x="172.72" y="165.1" rot="R90"/>
 </instances>
@@ -2455,7 +2457,7 @@ by Alex Albino</text>
 <segment>
 <pinref part="LDO_VREG" gate="G$1" pin="1"/>
 <pinref part="U$28" gate="G$1" pin="GND"/>
-<wire x1="109.22" y1="73.66" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="P$2"/>
@@ -2465,12 +2467,12 @@ by Alex Albino</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="P$2"/>
 <pinref part="U$31" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="76.2" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="76.2" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="P$2"/>
 <pinref part="U$32" gate="G$1" pin="GND"/>
-<wire x1="86.36" y1="76.2" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="76.2" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C_ARR1" gate="G$1" pin="P$8"/>
@@ -2508,7 +2510,7 @@ by Alex Albino</text>
 <wire x1="121.92" y1="106.68" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="3.3V"/>
 <pinref part="LDO_VREG" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="101.6" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="93.98" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="106.68" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2554,14 +2556,13 @@ by Alex Albino</text>
 </segment>
 <segment>
 <pinref part="LDO_VREG" gate="G$1" pin="3"/>
-<wire x1="101.6" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
-<junction x="96.52" y="88.9"/>
-<wire x1="96.52" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
 <junction x="86.36" y="88.9"/>
-<wire x1="86.36" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
+<junction x="76.2" y="88.9"/>
+<wire x1="76.2" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$29" gate="G$1" pin="VIN"/>
+<wire x1="76.2" y1="88.9" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="88.9" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="88.9" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="P$1"/>
 <pinref part="C7" gate="G$1" pin="P$1"/>
 </segment>

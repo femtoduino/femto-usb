@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -384,19 +384,6 @@
 </package>
 </packages>
 </library>
-<library name="ti-lm3480">
-<packages>
-<package name="LM3480">
-<wire x1="-1.5" y1="-0.7" x2="1.54" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="1.54" y1="0.7" x2="1.54" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="0.7" x2="1.54" y2="0.7" width="0.127" layer="21"/>
-<smd name="P$1" x="-0.93" y="-1.5" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="P$2" x="0.97" y="-1.5" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="P$3" x="0.02" y="1.5" dx="1" dy="0.5" layer="1" rot="R90"/>
-</package>
-</packages>
-</library>
 <library name="ohw-logo">
 <packages>
 <package name="OSHW_6X70_NOTEXT">
@@ -432,6 +419,19 @@
 <wire x1="1.397" y1="0.1524" x2="1.2954" y2="0.1016" width="0.1524" layer="21"/>
 <wire x1="1.2954" y1="0.1016" x2="1.143" y2="0.508" width="0.1524" layer="21"/>
 <wire x1="0.8382" y1="0.508" x2="1.143" y2="0.508" width="0.1524" layer="21" curve="-300.510237"/>
+</package>
+</packages>
+</library>
+<library name="MCP1700T-3302E_TT">
+<packages>
+<package name="MCP1700T-3302E/TT">
+<wire x1="0" y1="0" x2="2.9" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="1.3" width="0.127" layer="21"/>
+<wire x1="0" y1="1.3" x2="2.9" y2="1.3" width="0.127" layer="21"/>
+<wire x1="2.9" y1="0" x2="2.9" y2="1.3" width="0.127" layer="21"/>
+<smd name="GND" x="0.5" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VOUT" x="2.4" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VIN" x="1.45" y="1.9" dx="1" dy="0.5" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -665,7 +665,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="EPSON_TSX1" library="crystals" package="TSX-3225" value="32MHz" x="8.001" y="6.858" smashed="yes" rot="R270">
 <attribute name="DIGIKEY_PART" value="TSX-3225 32.0000MF15X-B-ND" x="8.001" y="6.858" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="LDO_VREG" library="ti-lm3480" package="LM3480" value="LM3480" x="8.001" y="10.668"/>
+<element name="LDO_VREG" library="MCP1700T-3302E_TT" package="MCP1700T-3302E/TT" value="MCP1700T-3302E/TT" x="6.5786" y="9.8552"/>
 <element name="C5" library="microbuilder" package="_0402MP" value="2.2uF" x="5.588" y="12.192" smashed="yes">
 <attribute name="NAME" x="4.445" y="12.6683" size="0.508" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="5.715" y="12.7952" size="0.4572" layer="27" font="vector" ratio="20"/>
@@ -1094,7 +1094,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="EPSON_TSX1" pad="2"/>
 <contactref element="C4" pad="1"/>
 <contactref element="LED1" pad="C"/>
-<contactref element="LDO_VREG" pad="P$1"/>
+<contactref element="LDO_VREG" pad="GND"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
 <contactref element="C7" pad="2"/>
@@ -1118,7 +1118,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.001" y1="6.858" x2="8.001" y2="8.636" width="0.1524" layer="1"/>
 <wire x1="8.001" y1="8.636" x2="7.493" y2="9.144" width="0.1524" layer="1"/>
 <wire x1="7.493" y1="9.144" x2="7.095" y2="9.144" width="0.1524" layer="1"/>
-<wire x1="7.095" y1="9.144" x2="7.071" y2="9.168" width="0.1524" layer="1"/>
+<wire x1="7.095" y1="9.144" x2="7.0786" y2="9.2552" width="0.1524" layer="1"/>
 <wire x1="2.921" y1="13.97" x2="2.921" y2="13.589" width="0.1524" layer="16"/>
 <wire x1="2.921" y1="13.589" x2="3.556" y2="12.954" width="0.1524" layer="16"/>
 <wire x1="3.556" y1="12.954" x2="5.588" y2="12.954" width="0.1524" layer="16"/>
@@ -1130,7 +1130,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="6.096" y1="9.652" x2="6.096" y2="9.144" width="0.1524" layer="1"/>
 <wire x1="6.096" y1="9.144" x2="6.35" y2="8.89" width="0.1524" layer="1"/>
 <wire x1="6.35" y1="8.89" x2="7.047" y2="8.89" width="0.1524" layer="1"/>
-<wire x1="7.047" y1="8.89" x2="7.071" y2="9.168" width="0.1524" layer="1"/>
+<wire x1="7.047" y1="8.89" x2="7.0786" y2="9.2552" width="0.1524" layer="1"/>
 <wire x1="9.271" y1="6.35" x2="8.509" y2="6.35" width="0.1524" layer="1"/>
 <wire x1="8.509" y1="6.35" x2="8.001" y2="6.858" width="0.1524" layer="1"/>
 <via x="8.001" y="6.858" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -1186,7 +1186,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R2" pad="2"/>
 <contactref element="C5" pad="1"/>
 <contactref element="R3" pad="1"/>
-<contactref element="LDO_VREG" pad="P$2"/>
+<contactref element="LDO_VREG" pad="VOUT"/>
 <via x="7.112" y="2.794" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="7.112" y1="2.794" x2="6.477" y2="2.159" width="0.1524" layer="15"/>
 <wire x1="6.477" y1="2.159" x2="5.969" y2="2.159" width="0.1524" layer="15"/>
@@ -1202,10 +1202,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.128" y1="10.414" x2="8.636" y2="10.414" width="0.1524" layer="1"/>
 <wire x1="8.636" y1="10.414" x2="8.89" y2="10.16" width="0.1524" layer="1"/>
 <wire x1="8.89" y1="10.16" x2="8.89" y2="9.249" width="0.1524" layer="1"/>
-<wire x1="8.89" y1="9.249" x2="8.971" y2="9.168" width="0.1524" layer="1"/>
+<wire x1="8.89" y1="9.249" x2="8.9786" y2="9.2552" width="0.1524" layer="1"/>
 <wire x1="6.604" y1="10.414" x2="8.128" y2="10.414" width="0.1524" layer="16"/>
-<wire x1="8.971" y1="9.168" x2="8.485" y2="9.168" width="0.1524" layer="1"/>
-<wire x1="8.485" y1="9.168" x2="8.128" y2="9.525" width="0.1524" layer="1"/>
+<wire x1="8.9786" y1="9.2552" x2="8.4342" y2="9.2552" width="0.1524" layer="1"/>
+<wire x1="8.4342" y1="9.2552" x2="8.128" y2="9.525" width="0.1524" layer="1"/>
 <via x="8.128" y="9.525" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="8.128" y1="9.525" x2="7.874" y2="9.525" width="0.1524" layer="15"/>
 <wire x1="7.874" y1="9.525" x2="5.715" y2="7.366" width="0.1524" layer="15"/>
@@ -1249,7 +1249,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="VIN">
 <contactref element="U$6" pad="P$1"/>
-<contactref element="LDO_VREG" pad="P$3"/>
+<contactref element="LDO_VREG" pad="VIN"/>
 <contactref element="C6" pad="1"/>
 <contactref element="C7" pad="1"/>
 <contactref element="MICRO_B_USB" pad="1"/>
@@ -1262,9 +1262,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="1.778" y1="12.192" x2="1.778" y2="13.843" width="0.1524" layer="16"/>
 <wire x1="1.778" y1="13.843" x2="1.651" y2="13.97" width="0.1524" layer="16"/>
 <wire x1="5.08" y1="10.922" x2="7.62" y2="10.922" width="0.254" layer="15"/>
-<wire x1="7.62" y1="10.922" x2="8.021" y2="11.323" width="0.254" layer="15"/>
-<via x="8.021" y="12.168" extent="1-16" drill="0.2032" diameter="0.508"/>
-<wire x1="8.021" y1="12.168" x2="8.021" y2="11.323" width="0.254" layer="15"/>
+<wire x1="7.62" y1="10.922" x2="8.0286" y2="11.323" width="0.254" layer="15"/>
+<via x="8.0286" y="11.9838" extent="1-16" drill="0.2032" diameter="0.508"/>
+<wire x1="8.0286" y1="11.9838" x2="8.0286" y2="11.323" width="0.254" layer="15"/>
 </signal>
 <signal name="N$26">
 <contactref element="R1" pad="1"/>
@@ -1330,33 +1330,33 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,9805d865de0a9e6a"/>
 <approved hash="19,1,580618661e145e74"/>
 <approved hash="4,1,58b3ee30d2156526"/>
-<approved hash="4,1,c48d0ad6362df884"/>
 <approved hash="4,1,b9d1771a4827fa4e"/>
 <approved hash="4,1,ca9d044637cdf6a4"/>
+<approved hash="4,1,c48d0ad6362df884"/>
 <approved hash="4,1,c5d10b1a3607f9ae"/>
 <approved hash="19,1,fd9bddfbd83af85a"/>
 <approved hash="19,1,2137dd5bd97d2511"/>
 <approved hash="19,1,2473d81fd85f2433"/>
-<approved hash="19,1,78f81818161a76fa"/>
 <approved hash="19,1,7af81a18243a44da"/>
-<approved hash="19,1,93741f181ebf92d3"/>
+<approved hash="19,1,78f81818161a76fa"/>
 <approved hash="19,1,9470181c185d9431"/>
+<approved hash="19,1,93741f181ebf92d3"/>
 <approved hash="19,1,a3747f187eb8a2d4"/>
 <approved hash="19,1,fafbda1be434c4d4"/>
 <approved hash="19,1,d7df3d3f3bf6d116"/>
 <approved hash="19,1,3374df18deb132dd"/>
-<approved hash="19,1,942c1fc01cf49718"/>
 <approved hash="19,1,93ec1800185893b4"/>
+<approved hash="19,1,942c1fc01cf49718"/>
 <approved hash="19,1,a1b4ddd8dd3da151"/>
 <approved hash="19,1,a178dd14debfa2d3"/>
 <approved hash="19,1,31b01ddc1d3a3156"/>
-<approved hash="19,1,317c1d101eb832d4"/>
 <approved hash="19,1,374c1b201a583634"/>
+<approved hash="19,1,317c1d101eb832d4"/>
 <approved hash="19,1,4173411342114271"/>
 <approved hash="19,1,5c335c535d915df1"/>
 <approved hash="19,1,6c304c504d946df4"/>
-<approved hash="19,1,9f78df18de759e15"/>
 <approved hash="19,1,9f34df54dfa59fc5"/>
+<approved hash="19,1,9f78df18de759e15"/>
 <approved hash="19,1,6b781718167a6a1a"/>
 </errors>
 </board>

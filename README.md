@@ -53,7 +53,7 @@ You may be used to 5V logic levels working with Atmel's 8-bit chips... but 5V ca
 The usual voltage range for Atmel's line of ARM chips is somewhere between 1.8V to 3.3V. 
 Failure to heed this notice will likely result in the production of a tiny paperweight, instead of a micro controller. 
 
-Ok, I suppose we can move onward. Let's get everything we need to build one.
+Ok, I suppose we can move forward. Let's get everything we need to build one.
 
 ## Building your own board
 The following instructions should help you build your own ARM board. Please follow common workplace and ESD safety practices, and ensure proper ventilation. Solder paste, solder rework, PCB fibers, hot air rework nozzles, soldering irons, and so on, should all be handled with proper safety in mind.
@@ -61,9 +61,8 @@ Please observe you local materials safety and disposal laws/guides. We assume no
 
 ### Equipment
 As with all ARM chips, you will benefit greatly from having a programmer dongle.
-Some vendors lock up their chips behind really expensive software tools, and even more expensive programmer dongles ($200+). 
-Plus, their support is lacking, and assume you are some kind of command line compiling ELF/Hex guru. 
-It's great if you are one already, but we all have to start somewhere, right?
+Some vendors lock their chips behind really expensive software tools, and even more expensive programmer dongles ($200+). 
+Oh, and have fun trying to get their proprietary stuff working with your open source setup.
 
 Thankfully, Atmel offers their ATMEL-ICE programmer at a reasonable price [about $85 USD](http://store.atmel.com/PartDetail.aspx?q=p:10500375#tc:description)
 (I hear you can get them much cheaper without the case, though don't expect it to come with ribbon cables if you go the cheap route.)

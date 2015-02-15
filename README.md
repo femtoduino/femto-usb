@@ -64,8 +64,8 @@ As with all ARM chips, you will benefit greatly from having a programmer dongle.
 Some vendors lock their chips behind really expensive software tools, and even more expensive programmer dongles ($200+). 
 Oh, and have fun trying to get their proprietary stuff working with your open source setup.
 
-Thankfully, Atmel offers their ATMEL-ICE programmer at a reasonable price [about $85 USD](http://store.atmel.com/PartDetail.aspx?q=p:10500375#tc:description)
-(I hear you can get them much cheaper without the case, though don't expect it to come with ribbon cables if you go the cheap route.)
+Thankfully, Atmel offers their ATMEL-ICE programmer at a reasonable price of [about $85 USD](http://store.atmel.com/PartDetail.aspx?q=p:10500375#tc:description).
+I hear you can get them much cheaper without the case, though don't expect it to come with ribbon cables if you go the cheap route.
 
 Please source the following equipment:
 * An [ATMEL-ICE programmer](http://www.atmel.com/tools/atatmel-ice.aspx)

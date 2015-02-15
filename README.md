@@ -88,8 +88,8 @@ On windows, you will need
 * Atmel Studio (6.2.x as of the time of this writing)
 
 On Mac OS X, and Linux
-* Terry Guo's GNU ARM Embedded Toolchain. https://launchpad.net/~terry.guo/+archive/ubuntu/gcc-arm-embedded (Ubuntu user's can add a PPA and have the apt-get package manager install it)
-* Legit command line skills.
+* [Terry Guo's GNU ARM Embedded Toolchain.](https://launchpad.net/~terry.guo/+archive/ubuntu/gcc-arm-embedded) (Ubuntu user's can add a PPA and have the apt-get package manager install it)
+* Legit command line ninja skills.
 * Make tools.
 
 For any machine you are on, you will also need the following:

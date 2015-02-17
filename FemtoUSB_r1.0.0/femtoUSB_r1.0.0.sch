@@ -2201,7 +2201,6 @@ ID: MCP1700T-3302E/TT</description>
 <text x="86.36" y="20.32" size="2.54" layer="94" font="vector">Released under MIT License
 (c) Femtoduino.com, 2015
 by Alex Albino</text>
-<text x="86.36" y="10.16" size="3.81" layer="94" font="vector">ALERT: Untested!</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

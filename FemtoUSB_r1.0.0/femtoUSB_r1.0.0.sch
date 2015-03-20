@@ -2190,6 +2190,8 @@ ID: MCP1700T-3302E/TT</description>
 <part name="U$36" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$37" library="microbuilder" deviceset="GND" device=""/>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="10uF"/>
+<part name="U$38" library="femtoduino" deviceset="SPST_SMD" device=""/>
+<part name="U$39" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2266,6 +2268,8 @@ by Alex Albino</text>
 <instance part="U$36" gate="G$1" x="241.3" y="66.04"/>
 <instance part="U$37" gate="G$1" x="241.3" y="43.18"/>
 <instance part="C8" gate="G$1" x="241.3" y="58.42" rot="R180"/>
+<instance part="U$38" gate="G$1" x="160.02" y="152.4"/>
+<instance part="U$39" gate="G$1" x="172.72" y="152.4" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2472,6 +2476,11 @@ by Alex Albino</text>
 <wire x1="226.06" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
 <junction x="226.06" y="114.3"/>
 <label x="236.22" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$38" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
+<label x="144.78" y="152.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PA16/SERCOM1/PAD[0]/SPI/I2C" class="0">
@@ -2774,6 +2783,11 @@ by Alex Albino</text>
 <pinref part="U$37" gate="G$1" pin="GND"/>
 <wire x1="241.3" y1="45.72" x2="241.3" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="U$38" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$39" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">

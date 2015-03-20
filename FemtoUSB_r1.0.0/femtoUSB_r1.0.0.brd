@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -114,7 +114,7 @@
 <wire x1="20.701" y1="15.24" x2="0" y2="15.24" width="0" layer="20"/>
 <wire x1="0" y1="15.24" x2="0" y2="0" width="0" layer="20"/>
 <text x="3.429" y="4.826" size="0.7112" layer="26" font="vector" ratio="20" rot="MR90">FemtoUSB</text>
-<text x="2.159" y="5.715" size="0.7112" layer="26" font="vector" ratio="20" rot="MR90">r1.0.0</text>
+<text x="2.0828" y="6.6548" size="0.7112" layer="26" font="vector" ratio="20" rot="MR90">r1.0.0</text>
 <text x="0.762" y="3.175" size="0.7112" layer="26" font="vector" ratio="20" rot="MR90">femtoduino.com</text>
 <text x="2.032" y="13.081" size="0.7112" layer="26" font="vector" ratio="20" rot="SMR90" align="top-right">VIN</text>
 <text x="3.175" y="13.081" size="0.7112" layer="26" font="vector" ratio="20" rot="SMR90" align="top-right">GND</text>
@@ -151,6 +151,12 @@
 <circle x="16.2814" y="7.5946" radius="0.250159375" width="0.254" layer="26"/>
 <circle x="16.2814" y="6.5786" radius="0.250159375" width="0.254" layer="26"/>
 <circle x="16.2814" y="5.5626" radius="0.250159375" width="0.254" layer="26"/>
+<text x="13.4366" y="1.0414" size="0.7112" layer="25" font="vector" ratio="20">BOOT</text>
+<polygon width="0.1524" layer="25">
+<vertex x="12.827" y="1.778"/>
+<vertex x="12.446" y="1.397"/>
+<vertex x="12.827" y="1.016"/>
+</polygon>
 </plain>
 <libraries>
 <library name="atmel-samd21">
@@ -668,6 +674,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="L1" library="microbuilder" package="_0603MP" value="10uH" x="3.048" y="1.5748" smashed="yes" rot="R90"/>
 <element name="C9" library="microbuilder" package="_0402MP" value="10uF" x="1.4732" y="2.032" smashed="yes" rot="R90"/>
 <element name="C8" library="microbuilder" package="_0402MP" value="10uF" x="2.1844" y="1.2192" smashed="yes" rot="R270"/>
+<element name="U$38" library="femtoduino" package="SPST_SMD" value="SPST_SMD" x="11.3538" y="1.3208" rot="R180"/>
 </elements>
 <signals>
 <signal name="PA00/X32IN">
@@ -840,6 +847,16 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.43" y1="12.319" x2="11.43" y2="7.874" width="0.1524" layer="15"/>
 <wire x1="11.43" y1="7.874" x2="9.652" y2="6.096" width="0.1524" layer="15"/>
 <wire x1="9.652" y1="6.096" x2="9.652" y2="4.318" width="0.1524" layer="15"/>
+<contactref element="U$38" pad="1"/>
+<wire x1="11.8618" y1="1.3208" x2="13.0302" y2="1.3208" width="0.2032" layer="1"/>
+<wire x1="13.0302" y1="1.3208" x2="13.081" y2="1.3716" width="0.2032" layer="1"/>
+<via x="13.081" y="1.3716" extent="1-16" drill="0.2032" diameter="0.508"/>
+<wire x1="13.081" y1="1.3716" x2="13.6652" y2="1.3716" width="0.1524" layer="2"/>
+<wire x1="13.6652" y1="1.3716" x2="14.1478" y2="1.8542" width="0.1524" layer="2"/>
+<wire x1="14.1478" y1="1.8542" x2="14.1478" y2="2.9464" width="0.1524" layer="2"/>
+<wire x1="14.1478" y1="2.9464" x2="13.7922" y2="3.302" width="0.1524" layer="2"/>
+<wire x1="13.7922" y1="3.302" x2="10.668" y2="3.302" width="0.1524" layer="2"/>
+<wire x1="10.668" y1="3.302" x2="9.652" y2="4.318" width="0.1524" layer="2"/>
 </signal>
 <signal name="PA16/SERCOM1/PAD[0]/SPI/I2C">
 <contactref element="IC1" pad="17"/>
@@ -942,10 +959,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.811" y1="6.223" x2="12.192" y2="5.842" width="0.1524" layer="2"/>
 <wire x1="12.192" y1="5.842" x2="12.192" y2="4.318" width="0.1524" layer="2"/>
 <wire x1="12.192" y1="4.318" x2="12.827" y2="3.683" width="0.1524" layer="2"/>
-<wire x1="12.827" y1="3.683" x2="13.462" y2="3.683" width="0.1524" layer="2"/>
-<wire x1="13.462" y1="3.683" x2="13.97" y2="3.175" width="0.1524" layer="2"/>
-<wire x1="13.97" y1="3.175" x2="14.986" y2="3.175" width="0.1524" layer="2"/>
-<wire x1="14.986" y1="3.175" x2="16.891" y2="1.27" width="0.1524" layer="2"/>
+<wire x1="12.827" y1="3.683" x2="14.478" y2="3.683" width="0.1524" layer="2"/>
+<wire x1="14.478" y1="3.683" x2="16.891" y2="1.27" width="0.1524" layer="2"/>
 </signal>
 <signal name="RESET">
 <contactref element="IC1" pad="26"/>
@@ -1127,6 +1142,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="1.4732" y1="1.524" x2="0.889" y2="0.9398" width="0.1524" layer="1"/>
 <wire x1="0.889" y1="0.9398" x2="0.5842" y2="0.9398" width="0.1524" layer="1"/>
 <wire x1="1.4732" y1="1.524" x2="2.1844" y2="1.7272" width="0.1524" layer="1"/>
+<contactref element="U$38" pad="2"/>
+<wire x1="10.8458" y1="1.3208" x2="10.6172" y2="1.3208" width="0.2032" layer="1"/>
+<wire x1="10.6172" y1="1.3208" x2="9.144" y2="2.794" width="0.2032" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U$9" pad="P$2"/>
@@ -1189,6 +1207,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.048" y1="1.397" x2="3.048" y2="0.7366" width="0.1524" layer="2"/>
 <wire x1="3.048" y1="0.7366" x2="2.9464" y2="0.7112" width="0.1524" layer="1"/>
 <wire x1="2.9464" y1="0.7112" x2="2.1844" y2="0.7112" width="0.1524" layer="1"/>
+<wire x1="3.048" y1="0.7366" x2="3.048" y2="0.8128" width="0" layer="19" extent="1-2"/>
 </signal>
 <signal name="N$32">
 <contactref element="MICRO_B_USB" pad="6"/>
@@ -1303,21 +1322,22 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="5,1,f72e47c64d5dcec9"/>
 <approved hash="19,1,e1df3d3f3bbde75d"/>
 <approved hash="19,1,e0a73c473865e485"/>
-<approved hash="19,1,7d7b1d1b1b9e7bfe"/>
 <approved hash="19,1,fb5f1b3f19f9f999"/>
+<approved hash="19,1,7d7b1d1b1b9e7bfe"/>
 <approved hash="19,1,237bdf17df9f23f3"/>
 <approved hash="19,1,2473d81fd85f2433"/>
 <approved hash="19,1,199859f85c381c58"/>
 <approved hash="19,1,93741f181ebf92d3"/>
-<approved hash="19,1,704710271e267e46"/>
 <approved hash="19,1,5a7a1a1a24046464"/>
+<approved hash="19,1,704710271e267e46"/>
 <approved hash="19,1,a3747f187eb8a2d4"/>
 <approved hash="19,1,f27bd21bec34cc54"/>
 <approved hash="19,1,3374df18deb132dd"/>
 <approved hash="19,1,a3753f193eb8a2d4"/>
-<approved hash="19,1,f7af13c310f1f49d"/>
 <approved hash="19,1,f06f1403145df031"/>
+<approved hash="19,1,f7af13c310f1f49d"/>
 <approved hash="19,1,d3771f1b1ebcd2d0"/>
+<approved hash="5,1,e129e15636e9c243"/>
 <approved hash="19,1,a374df18debda2d1"/>
 <approved hash="19,1,33701f1c1eba32d6"/>
 <approved hash="19,1,030a1f661ec202ae"/>
@@ -1325,10 +1345,10 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,9805d865de0a9e6a"/>
 <approved hash="19,1,b3e318031e06b5e6"/>
 <approved hash="19,1,580618661e145e74"/>
-<approved hash="19,1,9f34df54dfa59fc5"/>
 <approved hash="19,1,9f78df18de759e15"/>
-<approved hash="4,16,d73ed55c68371738"/>
+<approved hash="19,1,9f34df54dfa59fc5"/>
 <approved hash="4,16,d2fedf68623b1778"/>
+<approved hash="4,16,d73ed55c68371738"/>
 </errors>
 </board>
 </drawing>

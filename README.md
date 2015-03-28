@@ -1,5 +1,4 @@
-NOTE: Please see https://github.com/femtoio/femto-usb instead!
-This is no longer the main repository.
+NOTE: Please see https://github.com/femtoio/femto-usb
 
 
 femto-usb

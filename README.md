@@ -4,6 +4,8 @@ NOTE: Please see https://github.com/femtoio/femto-usb
 femto-usb
 =========
 
+[![Join the chat at https://gitter.im/femtoduino/femto-usb](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/femtoduino/femto-usb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 FemtoUSB - Atmel ARM Cortex M0+ (SAMD21), 256KB @ 48MHz, 3V3
 
 This micro controller is designed as a basic starting point for those interested in ARM designs (especially if you are transitioning from 8-bit AVR chips).

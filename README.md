@@ -137,6 +137,7 @@ Additionally, you will need to make sure the board's 3V3 (regulated) volatage pi
 | GND (SAM Pin 3, 5)             | GND            |
 
 
+#### Windows
 Open up Atmel Studio on your Windows machine, plug in the USB cable for your board, plug in the USB cable for your programmer dongle.
 Your board should power on, the programmer should have both a red LED and a green LED powered on.
 
@@ -168,6 +169,29 @@ Verifying Flash...OK
 
 Success! You now have a board with the SAM-BA bootloader! If you're on a Windows machine, you may notice Windows will now attempt to install drivers for the new device. The Windows driver install tool should succeed in finding the correct drivers.
 You can now see your board on Linux/Mac as well. Simply plug it in via USB, and run the 'lsusb' command from a terminal. You will see an Atmel 'SAM-BA' device listing.
+
+#### GNU/Linux (Ubuntu)
+
+You will need to install Terry Guo's arm-none-eabi-* toolchain, OpenOCD, and the build-essentails package.
+
+To load stuff over USB CDC, you will need either Atmel's SAM-BA utility, or the 'arduino' branch of the BOSSA utility (compiled from source). See https://github.com/femtoio/BOSSA
+
+
+```
+# Thanks to Patryk Jaworski for a wonderful blog article
+# http://regalis.com.pl/en/arm-cortex-stm32-gnulinux/
+openocd -f /path/to/boardconfig.cfg
+```
+Then, in a separate terminal:
+```
+telnet localhost 4444
+```
+...Run the following within telnet:
+```
+reset halt
+flash write_image erase yourfile.hex
+reset run
+```
 
 ## Next Steps
 We are working on getting Arduino integration working, along with other non-Arduino tools to load stuff via USB. Stay tuned!

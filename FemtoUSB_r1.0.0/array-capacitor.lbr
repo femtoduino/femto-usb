@@ -107,6 +107,26 @@
 <smd name="6" x="0.4" y="-0.8" dx="1.2" dy="0.52" layer="1" rot="R90"/>
 <smd name="8" x="1.2" y="-0.8" dx="1.2" dy="0.52" layer="1" rot="R90"/>
 </package>
+<package name="CAPACITOR_ARRAY_0508_MONO_1X4">
+<wire x1="-1.05" y1="-0.65" x2="-1.05" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="0.65" x2="-1" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1" y1="0.65" x2="1.05" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.05" y1="0.65" x2="1.05" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-0.65" x2="1" y2="-0.65" width="0.127" layer="21"/>
+<smd name="P$4" x="-0.75" y="0.65" dx="0.3" dy="0.56" layer="1"/>
+<smd name="P$1" x="-0.75" y="-0.65" dx="0.3" dy="0.56" layer="1"/>
+<smd name="P$2" x="-0.25" y="0.65" dx="0.3" dy="0.56" layer="1"/>
+<smd name="P$3" x="-0.25" y="-0.65" dx="0.3" dy="0.56" layer="1"/>
+<smd name="P$5" x="0.25" y="0.65" dx="0.3" dy="0.56" layer="1"/>
+<smd name="P$6" x="0.25" y="-0.65" dx="0.3" dy="0.56" layer="1"/>
+<smd name="P$7" x="0.75" y="0.65" dx="0.3" dy="0.56" layer="1"/>
+<smd name="P$8" x="0.75" y="-0.65" dx="0.3" dy="0.56" layer="1"/>
+<wire x1="-1" y1="-0.65" x2="-1.05" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="0.65" x2="-1.05" y2="-0.65" width="0.127" layer="23"/>
+<wire x1="-1.05" y1="-0.65" x2="1.05" y2="-0.65" width="0.127" layer="23"/>
+<wire x1="1.05" y1="-0.65" x2="1.05" y2="0.65" width="0.127" layer="23"/>
+<wire x1="1.05" y1="0.65" x2="-1.05" y2="0.65" width="0.127" layer="23"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1X4">
@@ -161,6 +181,28 @@
 <connect gate="G$1" pin="P$6" pad="6"/>
 <connect gate="G$1" pin="P$7" pad="7"/>
 <connect gate="G$1" pin="P$8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVX_CERAMIC_CAPACITOR_ARRAY_W2A4ZC104M4T4A">
+<gates>
+<gate name="G$1" symbol="1X4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPACITOR_ARRAY_0508_MONO_1X4">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>

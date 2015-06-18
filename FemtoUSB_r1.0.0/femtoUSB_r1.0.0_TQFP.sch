@@ -2172,7 +2172,7 @@ ID: MCP1700T-3302E/TT</description>
 <part name="U$23" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$24" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
-<part name="EPSON_TSX1" library="crystals" deviceset="TSX-3225" device="" value="32MHz">
+<part name="EPSON_TSX1" library="crystals" deviceset="TSX-3225" device="" value="48MHz">
 <attribute name="DIGIKEY_PART" value="TSX-3225 32.0000MF15X-B-ND"/>
 </part>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>

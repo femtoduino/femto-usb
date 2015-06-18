@@ -618,7 +618,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="8.001" y="3.2703" size="0.508" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="8.001" y="2.0002" size="0.4572" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="LED1" library="microbuilder" package="CHIPLED_0603_NOOUTLINE" value="RED" x="19.05" y="4.572" smashed="yes" rot="R270"/>
+<element name="LED1" library="microbuilder" package="CHIPLED_0603_NOOUTLINE" value="YELLOW" x="19.05" y="4.572" smashed="yes" rot="R270"/>
 <element name="R1" library="microbuilder" package="_0402MP" value="330" x="4.572" y="2.794" smashed="yes">
 <attribute name="NAME" x="3.937" y="3.2703" size="0.508" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="3.937" y="2.0002" size="0.4572" layer="27" font="vector" ratio="20"/>
@@ -633,7 +633,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C4" library="microbuilder" package="_0402MP" value="9pF" x="9.652" y="4.826" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.1283" y="5.461" size="0.508" layer="25" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="LED2" library="microbuilder" package="CHIPLED_0603_NOOUTLINE" value="GREEN" x="19.05" y="2.794" smashed="yes" rot="R270"/>
+<element name="LED2" library="microbuilder" package="CHIPLED_0603_NOOUTLINE" value="BLUE" x="19.05" y="2.794" smashed="yes" rot="R270"/>
 <element name="R2" library="microbuilder" package="_0402MP" value="10K" x="6.604" y="2.794" smashed="yes">
 <attribute name="NAME" x="5.969" y="3.2703" size="0.508" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="5.969" y="2.0002" size="0.4572" layer="27" font="vector" ratio="20"/>
@@ -654,7 +654,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PART_NO" value="C1632C104K4RAC" x="15.494" y="3.556" size="1.778" layer="27" display="off"/>
 </element>
 <element name="BTN" library="femtoduino" package="SPST_SMD" value="OMRON B3U-300P(M)" x="0.5842" y="1.6002" rot="R270"/>
-<element name="EPSON_TSX1" library="crystals" package="TSX-3225" value="32MHz" x="8.382" y="6.858" smashed="yes" rot="R270">
+<element name="EPSON_TSX1" library="crystals" package="TSX-3225" value="48MHz" x="8.382" y="6.858" smashed="yes" rot="R270">
 <attribute name="DIGIKEY_PART" value="TSX-3225 32.0000MF15X-B-ND" x="8.382" y="6.858" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="LDO_VREG" library="MCP1700T-3302E_TT" package="MCP1700T-3302E/TT" value="MCP1700T-3302E/TT" x="8.0772" y="12.8524" rot="R270"/>
@@ -1207,7 +1207,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.048" y1="1.397" x2="3.048" y2="0.7366" width="0.1524" layer="2"/>
 <wire x1="3.048" y1="0.7366" x2="2.9464" y2="0.7112" width="0.1524" layer="1"/>
 <wire x1="2.9464" y1="0.7112" x2="2.1844" y2="0.7112" width="0.1524" layer="1"/>
-<wire x1="3.048" y1="0.7366" x2="3.048" y2="0.8128" width="0" layer="19" extent="1-2"/>
+<wire x1="3.048" y1="0.8128" x2="3.048" y2="0.7366" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$32">
 <contactref element="MICRO_B_USB" pad="6"/>

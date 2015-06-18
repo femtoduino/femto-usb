@@ -665,7 +665,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="PART_NO" value="C1632C104K4RAC" x="14.478" y="2.159" size="1.778" layer="27" display="off"/>
 </element>
 <element name="BTN" library="femtoduino" package="SPST_SMD" value="OMRON B3U-300P(M)" x="0.5842" y="1.6002" rot="R270"/>
-<element name="EPSON_TSX1" library="crystals" package="TSX-3225" value="32MHz" x="8.001" y="6.858" smashed="yes" rot="R270">
+<element name="EPSON_TSX1" library="crystals" package="TSX-3225" value="48MHz" x="8.001" y="6.858" smashed="yes" rot="R270">
 <attribute name="DIGIKEY_PART" value="TSX-3225 32.0000MF15X-B-ND" x="8.001" y="6.858" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="LDO_VREG" library="MCP1700T-3302E_TT" package="MCP1700T-3302E/TT" value="MCP1700T-3302E/TT" x="6.5786" y="9.8552"/>

@@ -1,6 +1,6 @@
-Data Exported from: /home/aalbino/Projects/femtoduinoUSB/FemtoduinoUSB_r15/femtoduinoUSB_r15.brd
+Data Exported from: /home/aalbino/Projects/femto-usb/FemtoUSB_r1.0.0/femtoUSB_r1.0.0.brd
 with: /home/aalbino/eagle-6.5.0/ulp/statistic-brd.ulp Version 1.3.8
-at: 1/5/15 10:09 PM
+at: 6/18/15 4:04 AM
 EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
 
 all Values in mm
@@ -17,39 +17,39 @@ used layers 4
 16 Bottom
 _________________________
 
-322   	 Wire(s) incl. Arc(s)
+369   	 Wire(s) incl. Arc(s)
 2     	 Polygon(s)
 _________________________
-88    	 SMD(s) top
+96    	 SMD(s) top
 0     	 SMD(s) bottom
 ===================
-88    	 SMD(s) total
+96    	 SMD(s) total
 
 28    	 PAD(s)
 _________________________
-43    	 Via
+50    	 Via
 0     	 Hole
 ===================
-71    	 Drills total
+78    	 Drills total
 _________________________
-88	 tCream
+96	 tCream
 0	 bCream
 _________________________
 Routing Info: 
-37    	 Signal(s) 
-116   	 PAD/SMD total
+36    	 Signal(s) 
+124   	 PAD/SMD total
 ===================
-115   	 PAD/SMD on Signal
+123   	 PAD/SMD on Signal
 _________________________
 Packages used area:
-~ 178.94 mm² (0.018 dm²)
+~ 173.88 mm² (0.017 dm²)
 _________________________
 
 
 ============================
 
 ============================
-25 Elements: 0 locked / 25 unlocked
+29 Elements: 0 locked / 29 unlocked
 0 Testpoints (TP)
 
 ----------------------------
@@ -149,12 +149,13 @@ Nb.	Name	Used
 ----------------------------
 CLASS
 # 	Name	min. Width	Clearance	min. Drill	Used
-0	default	0.0000 	0.0000 	0.0000 	37  
+0	default	0.0000 	0.0000 	0.0000 	36  
 
 ----------------------------
 WIDTH
 WIRE	Q.
-0.1524 	305 
+0.1524 	348 
+0.2032 	4   
 0.6096 	9   
 0.3048 	5   
 0.3556 	3   
@@ -186,11 +187,11 @@ TEXT (s)	Q.
 
 ----------------------------
 SMD x	SMD y	Roundn.	Q.
-1.7000 	0.8000 	0%	2   
-0.5000 	0.5000 	0%	22  
+0.8890 	0.6985 	0%	4   
+0.5000 	0.5000 	0%	26  
 1.2000 	0.5200 	0%	8   
 1.4000 	1.1500 	0%	4   
-0.8000 	0.8000 	0%	6   
+0.8000 	0.8000 	0%	8   
 0.3000 	0.8000 	0%	32  
 1.0000 	0.5000 	0%	3   
 0.4000 	1.3500 	0%	5   
@@ -217,22 +218,22 @@ PAD iRestring	Q.
 0.1778 	28  
 
 VIA Outer-Diam	Q.
-0.5080 	43  
+0.5080 	50  
 
 VIA Outer-Restring 	Q.
-0.1524 	43  
+0.1524 	50  
 
 VIA Inner-Diam.	Q.
-0.3048 	43  
+0.3048 	50  
 
 VIA Inner-Restring	Q.
-0.0508 	43  
+0.0508 	50  
 
 VIA drill	Q.
-0.2032 	43  
+0.2032 	50  
 
 VIA Stack	Q.
-01-16	43  
+01-16	50  
 01-16-PAD	28  
 
 PAD drill	Q.
@@ -247,24 +248,23 @@ T02   0.7
 
 ----------------------------
 LIBRARY	Q.
-omron_tactile_switch	1   
-microbuilder	14  
+femtoduino	3   
+microbuilder	17  
 array-capacitor	1   
 crystals	1   
 atmel-samd21	1   
-ti-lm3480	1   
-femtoduino	1   
+MCP1700T-3302E_TT	1   
 pins_1.27mm_pitch	4   
 ohw-logo	1   
 
 PACKAGE	Q.
-SIDE_ACT_NO_GND_NO_BOSS	1   
-_0402MP	11  
+SPST_SMD	2   
+_0402MP	13  
 CAPACITOR_ARRAY_1206_MONO_1X4	1   
 TSX-3225	1   
-_0603MP	1   
+_0603MP	2   
 QFN32	1   
-LM3480	1   
+MCP1700T-3302E/TT	1   
 CHIPLED_0603_NOOUTLINE	2   
 USB_MICROB_PACKAGE	1   
 1X14_ROUND	1   
@@ -274,19 +274,21 @@ USB_MICROB_PACKAGE	1
 OSHW_6X70_NOTEXT	1   
 
 VALUE	PAC	Q.	Top	Bot
-OMRON B3U-300P(M)	SIDE_ACT_NO_GND_NO_BOSS	1	1	0
+OMRON B3U-300P(M)	SPST_SMD	1	1	0
 0.1uF	_0402MP	1	1	0
 4.7uF	_0402MP	1	1	0
 9pF	_0402MP	2	2	0
 2.2uF	_0402MP	2	2	0
 0.47uF	_0402MP	1	1	0
+10uF	_0402MP	2	2	0
 0.1uF	CAPACITOR_ARRAY_1206_MONO_1X4	1	1	0
-32MHz	TSX-3225	1	1	0
+48MHz	TSX-3225	1	1	0
 ~/-empty-/~FB1	_0603MP	1	1	0
 ATSAMD21E18A-MUT	QFN32	1	1	0
-LM3480	LM3480	1	1	0
-RED	CHIPLED_0603_NOOUTLINE	1	1	0
-GREEN	CHIPLED_0603_NOOUTLINE	1	1	0
+10uH	_0603MP	1	1	0
+MCP1700T-3302E/TT	MCP1700T-3302E/TT	1	1	0
+YELLOW	CHIPLED_0603_NOOUTLINE	1	1	0
+BLUE	CHIPLED_0603_NOOUTLINE	1	1	0
 USB_MICROB	USB_MICROB_PACKAGE	1	1	0
 330	_0402MP	3	3	0
 10K	_0402MP	1	1	0
@@ -295,6 +297,7 @@ USB_MICROB	USB_MICROB_PACKAGE	1	1	0
 1X5_ROUND	1X5_ROUND	1	1	0
 1X6_ROUND	1X6_ROUND	1	1	0
 ~/-empty-/~U$35	OSHW_6X70_NOTEXT	1	1	0
+SPST_SMD	SPST_SMD	1	1	0
 
 ----------------------------
 RECT x	RECT y	Q.
@@ -311,7 +314,7 @@ TEXT (w)	Q.
 0 TEXT wire width (copper)
 
 TEXT 	Q.
-0.7112 	31  
+0.7112 	32  
 1 TEXT size (place)
 1 TEXT wire width (place)
 
@@ -320,6 +323,6 @@ CIRCLE diam.	Q.
 
 
 Rudimentarily signal name(s):
-WIRE 'N$2' (-1.0236 -1.4895) (-2.0236 -1.4895);DELETE (-1.0236 -1.4895);
+WIRE 'N$2' (-1.4445 -1.2921) (-2.4445 -1.2921);DELETE (-1.4445 -1.2921);
 
 End report

@@ -1023,12 +1023,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="6.35" y1="11.938" x2="5.588" y2="12.7" width="0.254" layer="2"/>
 <wire x1="5.588" y1="12.7" x2="5.588" y2="13.843" width="0.254" layer="2"/>
 <wire x1="5.588" y1="13.843" x2="5.461" y2="13.97" width="0.254" layer="2"/>
-<contactref element="R5" pad="2"/>
-<via x="5.715" y="6.604" extent="1-16" drill="0.2032" diameter="0.508"/>
-<wire x1="5.715" y1="6.604" x2="5.842" y2="6.604" width="0.2032" layer="16"/>
-<wire x1="5.842" y1="6.604" x2="6.096" y2="6.858" width="0.254" layer="16"/>
-<wire x1="6.096" y1="6.858" x2="6.096" y2="8.382" width="0.254" layer="16"/>
-<wire x1="6.096" y1="8.382" x2="7.112" y2="9.398" width="0.254" layer="16"/>
 </signal>
 <signal name="PA24/USBDM">
 <contactref element="IC1" pad="23"/>
@@ -1097,6 +1091,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="16.891" y1="2.159" x2="17.526" y2="2.159" width="0.254" layer="2"/>
 <wire x1="17.526" y1="2.159" x2="18.161" y2="1.524" width="0.254" layer="2"/>
 <wire x1="18.161" y1="1.524" x2="18.161" y2="1.27" width="0.254" layer="2"/>
+<contactref element="R5" pad="2"/>
+<via x="5.715" y="6.604" extent="1-16" drill="0.2032" diameter="0.508"/>
+<wire x1="5.715" y1="6.604" x2="5.715" y2="8.001" width="0.254" layer="16"/>
+<wire x1="5.715" y1="8.001" x2="6.477" y2="8.763" width="0.254" layer="16"/>
+<wire x1="6.477" y1="8.763" x2="14.478" y2="8.763" width="0.254" layer="16"/>
+<wire x1="14.478" y1="8.763" x2="14.605" y2="8.89" width="0.254" layer="16"/>
 </signal>
 <signal name="VDDCORE">
 <contactref element="IC1" pad="29"/>
@@ -1498,8 +1498,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,f27bd21bec34cc54"/>
 <approved hash="19,1,3374df18deb132dd"/>
 <approved hash="19,1,a3753f193eb8a2d4"/>
-<approved hash="19,1,f06f1403145df031"/>
 <approved hash="19,1,f7af13c310f1f49d"/>
+<approved hash="19,1,f06f1403145df031"/>
 <approved hash="19,1,2673381f3af92495"/>
 <approved hash="19,1,e27106113810dc70"/>
 <approved hash="19,1,52fc58105b1e51f2"/>

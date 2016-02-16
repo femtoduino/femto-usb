@@ -947,13 +947,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="EPSON_TSX1" pad="1"/>
 <contactref element="C3" pad="2"/>
 <wire x1="28.867" y1="12.743" x2="28.867" y2="12.789" width="0.254" layer="1"/>
-<wire x1="28.867" y1="12.789" x2="27.813" y2="13.843" width="0.254" layer="1"/>
 <wire x1="23.886234375" y1="14.351" x2="22.41759375" y2="12.882359375" width="0.254" layer="1"/>
-<wire x1="27.813" y1="13.843" x2="26.289" y2="13.843" width="0.254" layer="1"/>
+<wire x1="28.702" y1="13.843" x2="26.289" y2="13.843" width="0.254" layer="1"/>
 <wire x1="26.289" y1="13.843" x2="25.781" y2="14.351" width="0.254" layer="1"/>
 <wire x1="25.781" y1="14.351" x2="23.886234375" y2="14.351" width="0.254" layer="1"/>
 <wire x1="28.867" y1="12.789" x2="28.575" y2="12.497" width="0.254" layer="1"/>
 <wire x1="28.575" y1="12.497" x2="28.575" y2="11.303" width="0.254" layer="1"/>
+<wire x1="28.867" y1="12.789" x2="28.867" y2="13.678" width="0.254" layer="1"/>
+<wire x1="28.867" y1="13.678" x2="28.702" y2="13.843" width="0.254" layer="1"/>
 </signal>
 <signal name="PA15/XOUT">
 <contactref element="IC1" pad="16"/>
@@ -1553,6 +1554,7 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,603d005d0c9c6cfc"/>
 <approved hash="5,16,f945dc12106dc917"/>
 <approved hash="19,16,e09c1c7c187ce49c"/>
+<approved hash="19,1,62c3212323fd601d"/>
 </errors>
 </board>
 </drawing>

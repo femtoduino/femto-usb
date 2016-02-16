@@ -157,7 +157,7 @@
 <vertex x="3.556" y="3.937"/>
 </polygon>
 <text x="15.24" y="2.54" size="0.7112" layer="26" font="vector" ratio="20" rot="MR270" align="top-right">PA15/BOOT</text>
-<text x="4.572" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-right">BOOT</text>
+<text x="4.572" y="4.191" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-right">BOOT</text>
 <polygon width="0.1524" layer="25">
 <vertex x="39.37" y="6.985"/>
 <vertex x="38.735" y="7.62"/>
@@ -176,12 +176,48 @@
 <vertex x="25.654" y="17.907"/>
 <vertex x="25.146" y="17.907"/>
 </polygon>
-<text x="20.447" y="17.907" size="0.7112" layer="26" font="vector" ratio="20" rot="SR270" align="top-left">D10~</text>
-<text x="23.241" y="17.907" size="0.7112" layer="26" font="vector" ratio="20" rot="SR270" align="top-left">D8~</text>
-<text x="17.907" y="17.907" size="0.7112" layer="26" font="vector" ratio="20" rot="SR270" align="top-left">D7~</text>
-<text x="15.494" y="17.907" size="0.7112" layer="26" font="vector" ratio="20" rot="SR270" align="top-left">D9~</text>
-<text x="13.081" y="17.907" size="0.7112" layer="26" font="vector" ratio="20" rot="SR270" align="top-left">SDA</text>
-<text x="10.414" y="17.907" size="0.7112" layer="26" font="vector" ratio="20" rot="SR270" align="top-left">SCL</text>
+<text x="20.447" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">D10~</text>
+<text x="23.241" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">D8~</text>
+<text x="17.907" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">D7~</text>
+<text x="15.494" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">D9~</text>
+<text x="13.081" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">SDA</text>
+<text x="10.414" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">SCL</text>
+<text x="30.734" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">D3~</text>
+<text x="33.02" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">D4~</text>
+<text x="34.798" y="18.034" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">A2</text>
+<text x="36.83" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">A1</text>
+<text x="34.925" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">A4</text>
+<text x="32.385" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">A3</text>
+<text x="29.337" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">AREF</text>
+<text x="27.432" y="3.175" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">A0</text>
+<text x="24.511" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">32OU</text>
+<text x="21.463" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">32IN</text>
+<text x="20.701" y="4.699" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">HOST</text>
+<text x="17.272" y="3.048" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">D5</text>
+<text x="13.589" y="2.921" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">BOOT</text>
+<text x="8.128" y="5.588" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">RESET</text>
+<text x="1.016" y="2.032" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">GND</text>
+<text x="5.715" y="4.318" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">3V3</text>
+<text x="7.874" y="17.78" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">3V3</text>
+<text x="5.969" y="17.907" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">GND</text>
+<text x="0.889" y="19.939" size="0.7112" layer="25" font="vector" ratio="20" rot="SR270" align="top-left">VIN</text>
+<text x="31.623" y="15.621" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">B</text>
+<wire x1="32.512" y1="15.24" x2="33.02" y2="15.24" width="0.254" layer="25"/>
+<wire x1="33.02" y1="15.24" x2="33.655" y2="15.875" width="0.254" layer="25"/>
+<wire x1="33.655" y1="15.875" x2="34.798" y2="15.875" width="0.254" layer="25"/>
+<wire x1="34.798" y1="15.875" x2="35.306" y2="16.383" width="0.254" layer="25"/>
+<wire x1="35.433" y1="14.605" x2="35.052" y2="14.224" width="0.254" layer="25"/>
+<wire x1="35.052" y1="14.224" x2="32.512" y2="14.224" width="0.254" layer="25"/>
+<text x="31.623" y="14.478" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">G</text>
+<text x="31.623" y="13.335" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">R</text>
+<wire x1="32.512" y1="12.827" x2="35.179" y2="12.827" width="0.254" layer="25"/>
+<wire x1="35.179" y1="12.827" x2="35.433" y2="13.081" width="0.254" layer="25"/>
+<wire x1="37.719" y1="13.335" x2="38.608" y2="13.335" width="0.254" layer="25"/>
+<wire x1="38.608" y1="13.335" x2="39.497" y2="14.224" width="0.254" layer="25"/>
+<wire x1="39.497" y1="14.224" x2="39.497" y2="14.859" width="0.254" layer="25"/>
+<wire x1="37.719" y1="14.986" x2="38.1" y2="14.986" width="0.254" layer="25"/>
+<wire x1="38.1" y1="14.986" x2="38.227" y2="15.113" width="0.254" layer="25"/>
+<wire x1="37.592" y1="16.383" x2="38.227" y2="16.383" width="0.254" layer="25"/>
 </plain>
 <libraries>
 <library name="atmel-samd21">
@@ -727,8 +763,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="36.957" y="13.9382" size="0.4572" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="R7" library="microbuilder" package="_0402MP" value="330" x="36.576" y="16.51" smashed="yes">
-<attribute name="NAME" x="35.433" y="16.9863" size="0.508" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="36.703" y="16.9862" size="0.4572" layer="27" font="vector" ratio="20"/>
+<attribute name="NAME" x="34.925" y="16.4783" size="0.508" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="37.465" y="16.7322" size="0.4572" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="RGBLED" library="osram_opto_LED" package="LRTB_R48G" value="LRTB_R48G" x="39.116" y="16.002"/>
 <element name="BOOT_BTN1" library="omron_tactile_switch" package="SIDE_ACT_NO_GND_NO_BOSS" value="TACTILE_SWITCH_NO_GND_NO_BOSS" x="39.37" y="4.572" rot="R270"/>

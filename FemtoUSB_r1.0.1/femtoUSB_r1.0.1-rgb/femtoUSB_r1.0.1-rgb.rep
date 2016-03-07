@@ -1,6 +1,6 @@
 Data Exported from: /home/aalbino/Projects/femto-usb/FemtoUSB_r1.0.1/femtoUSB_r1.0.1-rgb.brd
 with: /home/aalbino/eagle-7.5.0/ulp/statistic-brd.ulp Version 1.3.9
-at: 3/6/16 4:43 PM
+at: 3/6/16 6:43 PM
 EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
 
 all Values in mm
@@ -17,7 +17,7 @@ used layers 4
 16 Bottom
 _________________________
 
-468   	 Wire(s) incl. Arc(s)
+466   	 Wire(s) incl. Arc(s)
 2     	 Polygon(s)
 _________________________
 108   	 SMD(s) top
@@ -154,7 +154,7 @@ CLASS
 ----------------------------
 WIDTH
 WIRE	Q.
-0.2540 	310 
+0.2540 	308 
 0.1524 	135 
 0.4064 	4   
 0.2032 	6   
@@ -260,8 +260,8 @@ crystals	2
 atmel-samd21	1   
 MCP1700T-3302E_TT	1   
 femtoduino	2   
-osram_opto_LED	1   
 pins_1.27mm_pitch	4   
+osram_opto_LED	1   
 ohw-logo	1   
 
 PACKAGE	Q.
@@ -274,12 +274,12 @@ QFN32	1
 MCP1700T-3302E/TT	1   
 USB_MICROB_PACKAGE	1   
 ABS06-107-32.768KHZ-T	1   
-LRTB_R48G	1   
-SPST_SMD	1   
-1X14_ROUND	1   
 1X3_ROUND	1   
 1X5_ROUND	1   
 1X6_ROUND	1   
+1X14_ROUND	1   
+LRTB_R48G	1   
+SPST_SMD	1   
 OSHW_6X70_NOTEXT	1   
 
 VALUE	PAC	Q.	Top	Bot
@@ -290,7 +290,7 @@ TACTILE_SWITCH_NO_GND_NO_BOSS	SIDE_ACT_NO_GND_NO_BOSS	1	1	0
 2.2uF	_0402MP	2	2	0
 0.47uF	_0402MP	1	1	0
 10uF	_0402MP	2	2	0
-12pF	_0402MP	2	2	0
+4pF	_0402MP	2	2	0
 0.1uF	CAPACITOR_ARRAY_1206_MONO_1X4	1	1	0
 48MHz	TSX-3225	1	1	0
 ~/-empty-/~FB1	_0603MP	1	1	0
@@ -299,15 +299,15 @@ ATSAMD21E18A-MUT	QFN32	1	1	0
 MCP1700T-3302E/TT	MCP1700T-3302E/TT	1	1	0
 USB_MICROB	USB_MICROB_PACKAGE	1	1	0
 ABS06-107-32.768KHZ-T	ABS06-107-32.768KHZ-T	1	1	0
+1X3_ROUND	1X3_ROUND	1	1	0
+1X5_ROUND	1X5_ROUND	1	1	0
+1X6_ROUND	1X6_ROUND	1	1	0
+1X14_ROUND	1X14_ROUND	1	1	0
 330	_0402MP	5	5	0
 10K	_0402MP	1	1	0
 100K	_0402MP	1	1	0
 LRTB_R48G	LRTB_R48G	1	1	0
-OMRON B3U-300P(M)	SPST_SMD	1	1	0
-1X14_ROUND	1X14_ROUND	1	1	0
-1X3_ROUND	1X3_ROUND	1	1	0
-1X5_ROUND	1X5_ROUND	1	1	0
-1X6_ROUND	1X6_ROUND	1	1	0
+~/-empty-/~SJ_RESET	SPST_SMD	1	1	0
 ~/-empty-/~U$35	OSHW_6X70_NOTEXT	1	1	0
 
 ----------------------------
@@ -325,7 +325,7 @@ TEXT (w)	Q.
 0 TEXT wire width (copper)
 
 TEXT 	Q.
-0.7112 	31  
+0.7112 	32  
 1 TEXT size (place)
 1 TEXT wire width (place)
 

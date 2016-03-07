@@ -736,8 +736,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C9" library="microbuilder" package="_0402MP" value="10uF" x="1.4732" y="2.032" smashed="yes" rot="R90"/>
 <element name="C8" library="microbuilder" package="_0402MP" value="10uF" x="2.1844" y="1.2192" smashed="yes" rot="R270"/>
 <element name="OSC32K" library="crystals" package="ABS06-107-32.768KHZ-T" value="ABS06-107-32.768KHZ-T" x="11.3" y="6.5238"/>
-<element name="C10" library="microbuilder" package="_0402MP" value="12pF" x="10.6628" y="4.8148" smashed="yes" rot="R90"/>
-<element name="C11" library="microbuilder" package="_0402MP" value="12pF" x="11.534" y="4.8148" smashed="yes" rot="R90"/>
+<element name="C10" library="microbuilder" package="_0402MP" value="4pF" x="10.6628" y="4.8148" smashed="yes" rot="R90"/>
+<element name="C11" library="microbuilder" package="_0402MP" value="4pF" x="11.534" y="4.8148" smashed="yes" rot="R90"/>
 <element name="BTN_BOOT" library="omron_tactile_switch" package="SIDE_ACT_NO_GND_NO_BOSS" value="TACTILE_SWITCH_NO_GND_NO_BOSS" x="12.192" y="1.143" rot="R180"/>
 <element name="R5" library="microbuilder" package="_0402MP" value="330" x="5.715" y="7.112" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.223" y="8.5407" size="0.508" layer="25" font="vector" ratio="20" rot="R180"/>

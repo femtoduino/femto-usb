@@ -2097,8 +2097,8 @@ ID: MCP1700T-3302E/TT</description>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="10uF"/>
 <part name="U$39" library="microbuilder" deviceset="GND" device=""/>
 <part name="OSC32K" library="crystals" deviceset="ABS06-107-32.768KHZ-T" device=""/>
-<part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="12pF"/>
-<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="12pF"/>
+<part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="4pF"/>
+<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="4pF"/>
 <part name="U$41" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$42" library="microbuilder" deviceset="GND" device=""/>
 <part name="BTN_BOOT" library="omron_tactile_switch" deviceset="TACTILE_SWITCH_NO_GND_NO_BOSS" device=""/>

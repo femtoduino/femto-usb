@@ -218,6 +218,9 @@
 <wire x1="37.719" y1="14.986" x2="38.1" y2="14.986" width="0.254" layer="25"/>
 <wire x1="38.1" y1="14.986" x2="38.227" y2="15.113" width="0.254" layer="25"/>
 <wire x1="37.592" y1="16.383" x2="38.227" y2="16.383" width="0.254" layer="25"/>
+<text x="31.242" y="10.414" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">D10~ = B</text>
+<text x="31.242" y="9.398" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">D3~  = G</text>
+<text x="31.242" y="8.382" size="0.7112" layer="25" font="vector" ratio="20" rot="SR0" align="top-left">D4~  = R</text>
 </plain>
 <libraries>
 <library name="atmel-samd21">
@@ -731,7 +734,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="10.16" y="14.7003" size="0.508" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="11.303" y="14.8272" size="0.4572" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="OSH_LOGO" library="ohw-logo" package="OSHW_6X70_NOTEXT" value="" x="35.687" y="11.684" rot="R270"/>
+<element name="OSH_LOGO" library="ohw-logo" package="OSHW_6X70_NOTEXT" value="" x="36.449" y="12.319" rot="R270"/>
 <element name="L1" library="microbuilder" package="_0603MP" value="10uH" x="11.557" y="4.318" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.922" y="3.3655" size="0.508" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="10.8585" y="4.7625" size="0.4572" layer="27" font="vector" ratio="20" rot="R90"/>

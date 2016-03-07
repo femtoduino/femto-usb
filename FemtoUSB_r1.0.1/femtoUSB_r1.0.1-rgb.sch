@@ -2062,7 +2062,7 @@ ID: MCP1700T-3302E/TT</description>
 <part name="U$16" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$19" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="C_ARR1" library="array-capacitor" deviceset="KEMET_CERAMIC_CAPACITOR_ARRAY_1X4" device="" value="0.1uF"/>
+<part name="C_ARR" library="array-capacitor" deviceset="KEMET_CERAMIC_CAPACITOR_ARRAY_1X4" device="" value="0.1uF"/>
 <part name="SJ_RESET" library="femtoduino" deviceset="SPST_SMD" device="" value="OMRON B3U-300P(M)"/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
@@ -2096,12 +2096,12 @@ ID: MCP1700T-3302E/TT</description>
 <part name="U$37" library="microbuilder" deviceset="GND" device=""/>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="10uF"/>
 <part name="U$39" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$40" library="crystals" deviceset="ABS06-107-32.768KHZ-T" device=""/>
+<part name="OSC32K" library="crystals" deviceset="ABS06-107-32.768KHZ-T" device=""/>
 <part name="C10" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="12pF"/>
 <part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="12pF"/>
 <part name="U$41" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$42" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$43" library="omron_tactile_switch" deviceset="TACTILE_SWITCH_NO_GND_NO_BOSS" device=""/>
+<part name="BTN_BOOT" library="omron_tactile_switch" deviceset="TACTILE_SWITCH_NO_GND_NO_BOSS" device=""/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="_0402MP" value="330"/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="_0402MP" value="100K"/>
 <part name="U$38" library="microbuilder" deviceset="3.3V" device=""/>
@@ -2147,7 +2147,7 @@ by Alex Albino</text>
 <instance part="U$16" gate="G$1" x="12.7" y="35.56" rot="R180"/>
 <instance part="U$18" gate="G$1" x="226.06" y="134.62"/>
 <instance part="U$19" gate="G$1" x="226.06" y="177.8"/>
-<instance part="C_ARR1" gate="G$1" x="180.34" y="58.42"/>
+<instance part="C_ARR" gate="G$1" x="180.34" y="58.42"/>
 <instance part="SJ_RESET" gate="G$1" x="200.66" y="147.32" rot="MR270"/>
 <instance part="U$17" gate="G$1" x="22.86" y="142.24" rot="R270"/>
 <instance part="U$21" gate="G$1" x="104.14" y="157.48" rot="R90"/>
@@ -2181,12 +2181,12 @@ by Alex Albino</text>
 <instance part="U$37" gate="G$1" x="241.3" y="43.18"/>
 <instance part="C8" gate="G$1" x="241.3" y="58.42" rot="R180"/>
 <instance part="U$39" gate="G$1" x="172.72" y="152.4" rot="R90"/>
-<instance part="U$40" gate="G$1" x="152.4" y="137.16"/>
+<instance part="OSC32K" gate="G$1" x="152.4" y="137.16"/>
 <instance part="C10" gate="G$1" x="147.32" y="132.08" rot="R180"/>
 <instance part="C11" gate="G$1" x="162.56" y="132.08" rot="R180"/>
 <instance part="U$41" gate="G$1" x="147.32" y="121.92"/>
 <instance part="U$42" gate="G$1" x="162.56" y="121.92"/>
-<instance part="U$43" gate="G$1" x="154.94" y="152.4"/>
+<instance part="BTN_BOOT" gate="G$1" x="154.94" y="152.4"/>
 <instance part="R5" gate="G$1" x="33.02" y="83.82"/>
 <instance part="R6" gate="G$1" x="43.18" y="78.74"/>
 <instance part="U$38" gate="G$1" x="53.34" y="78.74" rot="R270"/>
@@ -2209,7 +2209,7 @@ by Alex Albino</text>
 <label x="73.66" y="53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U$40" gate="G$1" pin="XTALIN"/>
+<pinref part="OSC32K" gate="G$1" pin="XTALIN"/>
 <wire x1="152.4" y1="137.16" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
 <label x="134.62" y="139.7" size="1.778" layer="95"/>
 <junction x="147.32" y="137.16"/>
@@ -2230,7 +2230,7 @@ by Alex Albino</text>
 <label x="66.04" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="U$40" gate="G$1" pin="XTALOUT"/>
+<pinref part="OSC32K" gate="G$1" pin="XTALOUT"/>
 <wire x1="157.48" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
 <label x="167.64" y="139.7" size="1.778" layer="95"/>
 <junction x="162.56" y="137.16"/>
@@ -2258,7 +2258,7 @@ by Alex Albino</text>
 <label x="38.1" y="160.02" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$7"/>
+<pinref part="C_ARR" gate="G$1" pin="P$7"/>
 <wire x1="198.12" y1="60.96" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
 <label x="198.12" y="73.66" size="1.778" layer="95" rot="R90"/>
 <junction x="198.12" y="68.58"/>
@@ -2328,7 +2328,7 @@ by Alex Albino</text>
 <label x="38.1" y="144.78" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$1"/>
+<pinref part="C_ARR" gate="G$1" pin="P$1"/>
 <wire x1="160.02" y1="60.96" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 <label x="160.02" y="88.9" size="1.778" layer="95" rot="R90"/>
 <wire x1="160.02" y1="71.12" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
@@ -2432,7 +2432,7 @@ by Alex Albino</text>
 </segment>
 <segment>
 <label x="144.78" y="152.4" size="1.778" layer="95" rot="R180"/>
-<pinref part="U$43" gate="G$1" pin="1"/>
+<pinref part="BTN_BOOT" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="152.4" x2="152.4" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2597,7 +2597,7 @@ by Alex Albino</text>
 <label x="93.98" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$3"/>
+<pinref part="C_ARR" gate="G$1" pin="P$3"/>
 <wire x1="172.72" y1="60.96" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
 <label x="172.72" y="71.12" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -2663,17 +2663,17 @@ by Alex Albino</text>
 <pinref part="U$21" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$2"/>
+<pinref part="C_ARR" gate="G$1" pin="P$2"/>
 <pinref part="U$22" gate="G$1" pin="GND"/>
 <wire x1="160.02" y1="45.72" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$4"/>
+<pinref part="C_ARR" gate="G$1" pin="P$4"/>
 <pinref part="U$23" gate="G$1" pin="GND"/>
 <wire x1="172.72" y1="45.72" x2="172.72" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$6"/>
+<pinref part="C_ARR" gate="G$1" pin="P$6"/>
 <pinref part="U$24" gate="G$1" pin="GND"/>
 <wire x1="185.42" y1="45.72" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
 </segment>
@@ -2719,7 +2719,7 @@ by Alex Albino</text>
 <wire x1="76.2" y1="76.2" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$8"/>
+<pinref part="C_ARR" gate="G$1" pin="P$8"/>
 <wire x1="198.12" y1="53.34" x2="198.12" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$33" gate="G$1" pin="GND"/>
 </segment>
@@ -2736,7 +2736,7 @@ by Alex Albino</text>
 <segment>
 <pinref part="U$39" gate="G$1" pin="GND"/>
 <wire x1="162.56" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U$43" gate="G$1" pin="2"/>
+<pinref part="BTN_BOOT" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="P$1"/>
@@ -2781,7 +2781,7 @@ by Alex Albino</text>
 <pinref part="U$1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="C_ARR1" gate="G$1" pin="P$5"/>
+<pinref part="C_ARR" gate="G$1" pin="P$5"/>
 <wire x1="185.42" y1="60.96" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="3.3V"/>
 </segment>

@@ -29,6 +29,7 @@
  * 
  * 
  * Once loaded, open up the Serial Window.
+ * Make sure to select "Newline" for line endings.
  * 
  * Try sending the following:
  * 
@@ -65,19 +66,24 @@ bool isBlueOn = true;
 
 void setup() {
   // initialize serial:
-  while(!Serial);
+  while(!SerialUSB);
   SerialUSB.begin(115200); // Required baud rate arg, though it's disregarded internally
+  SerialUSB.println("Starting!");
   
   // make the pins outputs:
   pinMode(redPin, OUTPUT);
   pinMode(greenPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
 
+  analogWrite(redPin, 0);
+  analogWrite(greenPin, 255);
+  analogWrite(bluePin, 0);
+
 }
 
 void loop() {
   // if there's any serial available, read it:
-  while (SerialUSB.available() > 0) {
+  while (SerialUSB.available()) {
 
     // look for the next valid integer in the incoming serial stream:
     int red = SerialUSB.parseInt();

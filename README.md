@@ -1,6 +1,3 @@
-NOTE: Please see https://github.com/femtoio/femto-usb
-
-
 femto-usb
 =========
 
@@ -11,6 +8,12 @@ FemtoUSB - Atmel ARM Cortex M0+ (SAMD21), 256KB @ 48MHz, 3V3
 This micro controller is designed as a basic starting point for those interested in ARM designs (especially if you are transitioning from 8-bit AVR chips).
 
 We use Atmel's ARM Cortex M0+ offering, the ATSAMD21E18A. The schematic follows the suggested design found in the SAM D21 data sheet.
+
+## Arduino Setup (TLDR)
+
+Arduino compatible when using FemtoUSB (ARM) r1.0.1, with RGB LED.
+
+Just add us to your Arduino IDE. See README https://github.com/femtoio/ArduinoCore-atsamd21e18a/tree/atsamd21e18a_variant
 
 
 ## Why Atmel?

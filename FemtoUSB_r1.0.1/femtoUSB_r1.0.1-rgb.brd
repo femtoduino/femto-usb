@@ -205,6 +205,8 @@
 <vertex x="20.447" y="8.382"/>
 <vertex x="20.447" y="9.398"/>
 </polygon>
+<dimension x1="0" y1="15.24" x2="20.701" y2="15.24" x3="10.3505" y3="16.51" textsize="1.778" layer="51" unit="inch" visible="yes"/>
+<dimension x1="20.701" y1="0" x2="20.701" y2="15.24" x3="24.13" y3="7.62" textsize="1.778" layer="51" unit="inch" visible="yes"/>
 </plain>
 <libraries>
 <library name="atmel-samd21">
@@ -699,16 +701,16 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="13.335" y="5.3657" size="0.508" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="MFR_ID" value="C1005X5R1A475K050BC" x="12.8524" y="4.3942" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C3" library="microbuilder" package="_0402MP" value="9pF" x="9.652" y="6.858" smashed="yes" rot="R90">
+<element name="C3" library="microbuilder" package="_0402MP" value="10pF" x="9.652" y="6.858" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.3789" y="7.8486" size="0.508" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="MFR_ID" value="GRM0335C1E100JA01D" x="9.652" y="6.858" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR_ID" value="VJ0402A100FXACW1BC" x="9.652" y="6.858" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C4" library="microbuilder" package="_0402MP" value="9pF" x="9.652" y="4.826" smashed="yes" rot="R270">
+<element name="C4" library="microbuilder" package="_0402MP" value="10pF" x="9.652" y="4.826" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.3663" y="4.0132" size="0.508" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="MFR_ID" value="GRM0335C1E100JA01D" x="9.652" y="4.826" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR_ID" value="VJ0402A100FXACW1BC" x="9.652" y="4.826" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R2" library="microbuilder" package="_0402MP" value="10K" x="6.604" y="2.667" smashed="yes">
-<attribute name="NAME" x="5.969" y="3.1433" size="0.508" layer="25" font="vector" ratio="20"/>
+<attribute name="NAME" x="6.223" y="3.1433" size="0.508" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="5.969" y="1.8732" size="0.4572" layer="27" font="vector" ratio="20"/>
 <attribute name="MFR_ID" value="CRCW040210K0JNEDHP" x="6.604" y="2.667" size="1.778" layer="27" display="off"/>
 </element>
@@ -1327,14 +1329,14 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.127" layer="16" isolate="0.254">
 <vertex x="0.254" y="14.986"/>
 <vertex x="20.32" y="14.986"/>
-<vertex x="20.32" y="0.508"/>
-<vertex x="0.254" y="0.508"/>
+<vertex x="20.32" y="0.254"/>
+<vertex x="0.254" y="0.254"/>
 </polygon>
 <polygon width="0.127" layer="1" isolate="0.254">
 <vertex x="0.254" y="14.986"/>
 <vertex x="20.32" y="14.986"/>
-<vertex x="20.32" y="0.508"/>
-<vertex x="0.254" y="0.508"/>
+<vertex x="20.32" y="0.254"/>
+<vertex x="0.254" y="0.254"/>
 </polygon>
 </signal>
 <signal name="3.3V">

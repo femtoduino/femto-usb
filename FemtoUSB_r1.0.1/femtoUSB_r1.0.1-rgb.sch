@@ -2056,11 +2056,11 @@ ID: MCP1700T-3302E/TT</description>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="4.7uF">
 <attribute name="MFR_ID" value="C1005X5R1A475K050BC"/>
 </part>
-<part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="9pF">
-<attribute name="MFR_ID" value="GRM0335C1E100JA01D"/>
+<part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="10pF">
+<attribute name="MFR_ID" value="VJ0402A100FXACW1BC"/>
 </part>
-<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="9pF">
-<attribute name="MFR_ID" value="GRM0335C1E100JA01D"/>
+<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="10pF">
+<attribute name="MFR_ID" value="VJ0402A100FXACW1BC"/>
 </part>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="_0402MP" value="10K">
 <attribute name="MFR_ID" value="CRCW040210K0JNEDHP"/>
@@ -2168,7 +2168,7 @@ ID: MCP1700T-3302E/TT</description>
 <plain>
 <text x="149.86" y="27.94" size="3.81" layer="94" font="vector">FemtoUSB</text>
 <text x="238.76" y="7.62" size="2.54" layer="94" font="vector">1.0.1</text>
-<text x="182.88" y="7.62" size="2.54" layer="94" font="vector">1.0.1</text>
+<text x="182.88" y="7.62" size="2.54" layer="94" font="vector">1</text>
 <text x="182.88" y="27.94" size="2.54" layer="94" font="vector">ATMEL SAMD21E ARM CORTEX M0+</text>
 <wire x1="0" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="94"/>
 <wire x1="73.66" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="94"/>
